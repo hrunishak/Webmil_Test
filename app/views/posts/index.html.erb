@@ -1,0 +1,6 @@
+<h1>Цікаві лінки</h1>
+<section id='posts'>
+  <%= render @posts %>
+</section>
+
+<%= will_paginate @posts, renderer: 'BootstrapPaginationHelper::LinkRenderer' %>

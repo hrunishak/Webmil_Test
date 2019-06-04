@@ -1,0 +1,15 @@
+<article class="post">
+  <section class="post-head">
+    <h1> <%= @post.title %> </h1>
+<small>
+  <time><%= @post.created_at.to_date.strftime("%d %B, %Y") %> </time>
+  
+</small>
+  </section>
+
+  <section class="post-body">
+    <%= image_tag @post.image.url(:large), class: 'img-show' if @post.image? %>
+  <%= @post.body.html_safe %>
+  </section>
+</article>
+<%= render 'disqus' %>
