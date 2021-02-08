@@ -22,7 +22,7 @@ gem 'rails_admin', '~> 1.4.2'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'autoprefixer-rails', '8.6.5'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem "mini_magick"
 
 gem 'trix-rails'
